@@ -1,0 +1,634 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.twitch.tv:443
+DEBUG:urllib3.connectionpool:https://api.twitch.tv:443 "GET /helix/users?login=Shakerz_92 HTTP/1.1" 200 537
+DEBUG:twitchio.ext.pubsub.websocket:Websocket connecting to wss://pubsub-edge.twitch.tv
+INFO:hypercorn.error:Running on http://0.0.0.0:8080 (CTRL + C to quit)
+DEBUG:twitchio.ext.pubsub.websocket:Sending LISTEN payload with nonce '27875517': {'type': 'LISTEN', 'data': {'topics': ['channel-points-channel-v1.51565836'], 'auth_token': 'ja80fq00md2istvm8vdzdiiwcxquic'}}
+DEBUG:twitchio.websocket: > PASS oauth:tydxut9d8p0hrmrq137ket34r1bvky
+DEBUG:twitchio.websocket: > NICK paperrocker
+DEBUG:twitchio.websocket: > CAP REQ :twitch.tv/commands
+DEBUG:twitchio.websocket: > CAP REQ :twitch.tv/tags
+DEBUG:twitchio.websocket: > CAP REQ :twitch.tv/membership
+DEBUG:twitchio.websocket: > JOIN #shakerz_92
+DEBUG:twitchio.websocket: > JOIN #0us5ama
+DEBUG:twitchio.websocket: < :tmi.twitch.tv 001 paperrocker :Welcome, GLHF!
+:tmi.twitch.tv 002 paperrocker :Your host is tmi.twitch.tv
+:tmi.twitch.tv 003 paperrocker :This server is rather new
+:tmi.twitch.tv 004 paperrocker :-
+:tmi.twitch.tv 375 paperrocker :-
+:tmi.twitch.tv 372 paperrocker :You are in a maze of twisty passages, all alike.
+:tmi.twitch.tv 376 paperrocker :>
+:tmi.twitch.tv CAP * ACK :twitch.tv/commands
+:tmi.twitch.tv CAP * ACK :twitch.tv/tags
+:tmi.twitch.tv CAP * ACK :twitch.tv/membership
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+INFO:twitchio.websocket:Successfully logged onto Twitch WS: paperrocker
+DEBUG:twitchio.websocket: < :paperrocker!paperrocker@paperrocker.tmi.twitch.tv JOIN #shakerz_92
+@badge-info=subscriber/2;badges=moderator/1,subscriber/2,no_video/1;color=#FF69B4;display-name=PaperRocker;emote-sets=0,1700725,304683093,305524611,344927408,408238787,412524803,450572371,5dc13b38-7ded-4857-83e8-753968eeaba3;mod=1;subscriber=1;user-type=mod :tmi.twitch.tv USERSTATE #shakerz_92
+@emote-only=0;followers-only=-1;r9k=0;room-id=51565836;slow=0;subs-only=0 :tmi.twitch.tv ROOMSTATE #shakerz_92
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: JOIN:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: channel_joined
+DEBUG:twitchio.client:dispatching event channel_joined
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket:ACTION: USERSTATE:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: userstate
+DEBUG:twitchio.client:dispatching event userstate
+DEBUG:twitchio.websocket: < :paperrocker.tmi.twitch.tv 353 paperrocker = #shakerz_92 :abode1bam im_nbh khaled004_ murruj othman4433 dreamnman idanger9 msb2014 qtupe tarrad1 b0zah fatalframer_q8 hussain149 kiilua_99 abdule1ah_ qxs24 soundalerts 0us5ama 7lm92 devilchawy jizany ljehad animepain m8hzad xxsonxxxx youssefthey2j tizcloud alkenali azizqatar kipoi shakerz_92 swiftyrkn m1ssiing alibam10 moekattan wizebot x75dead yshaker ab0rabi3 hreemj itsbfr streamelements z3tor1 h90_ khaled omardaas90 paperrocker
+:paperrocker.tmi.twitch.tv 353 paperrocker = #shakerz_92 :t_conann90 raifx_90 sadness81 ybwchannel 7ramee afnan_opi benshi9 hmlies iwzly fahad89inho sarmd sweethanin tariqtmm ii_alyldur iraal_ masterrisk909 1roro999 3baada amj4do f7g_ hsam1234 mohammedsan99 mohannd__ qtr1ali salma1023 ssnz_92 silverxero_ xenomorphic0 5hs_ blackyluul foka irampage88 m7mas123
+:paperrocker.tmi.twitch.tv 366 paperrocker #shakerz_92 :End of /NAMES list
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket: < :paperrocker!paperrocker@paperrocker.tmi.twitch.tv JOIN #0us5ama
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: JOIN:: 0us5ama
+DEBUG:twitchio.websocket:Dispatching event: channel_joined
+DEBUG:twitchio.client:dispatching event channel_joined
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket: < :paperrocker.tmi.twitch.tv 353 paperrocker = #0us5ama :paperrocker
+:paperrocker.tmi.twitch.tv 366 paperrocker #0us5ama :End of /NAMES list
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket: < @badge-info=;badges=moderator/1,no_video/1;color=#FF69B4;display-name=PaperRocker;emote-sets=0,1700725,304683093,305524611,344927408,408238787,412524803,450572371;mod=1;subscriber=0;user-type=mod :tmi.twitch.tv USERSTATE #0us5ama
+@emote-only=0;followers-only=-1;r9k=0;room-id=436516963;slow=0;subs-only=0 :tmi.twitch.tv ROOMSTATE #0us5ama
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: USERSTATE:: 0us5ama
+DEBUG:twitchio.websocket:Dispatching event: userstate
+DEBUG:twitchio.client:dispatching event userstate
+DEBUG:twitchio.websocket:Dispatching event: ready
+DEBUG:twitchio.client:dispatching event ready
+DEBUG:twitchio.websocket: > PASS oauth:8ttvh6uqichcbvtokg6hgltk3guy50
+DEBUG:twitchio.websocket: > NICK 0us5ama
+DEBUG:twitchio.websocket: > CAP REQ :twitch.tv/commands
+DEBUG:twitchio.websocket: > CAP REQ :twitch.tv/tags
+DEBUG:twitchio.websocket: > CAP REQ :twitch.tv/membership
+DEBUG:twitchio.websocket: < @badge-info=subscriber/11;badges=moderator/1,subscriber/9,bits/1750000;client-nonce=c91329527b30cde3effe3703f9236be9;color=#1E90FF;display-name=fatalframer_q8;emotes=;first-msg=0;flags=;id=d5d934d9-4f6a-477e-92bc-5be1374928cd;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298728624;turbo=0;user-id=426479976;user-type=mod :fatalframer_q8!fatalframer_q8@fatalframer_q8.tmi.twitch.tv PRIVMSG #shakerz_92 :العاب تختيم وبعض العاب الاونلاين
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=17b07f81-8e14-439b-93ab-d76ef614fc89;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298734767;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :ومين بيدافع عنك من الماسونين؟ @youssefthey2j
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/7;badges=subscriber/6,bits/10000;client-nonce=9e75e691a79c5e5bbca02c1345ccd650;color=#FF69B4;display-name=SweetHanin;emotes=emotesv2_7bb7dbbb5e9b46598bc5d6db4391a748:16-28,30-42,44-56;first-msg=0;flags=;id=fa8cfbae-6bc7-4be4-8ba8-e9910841abcd;mod=0;reply-parent-display-name=fatalframer_q8;reply-parent-msg-body=مو\sاشاعات\sهذي\sحقائق;reply-parent-msg-id=cdf7f9e9-806b-4ea6-b972-b820916b9759;reply-parent-user-id=426479976;reply-parent-user-login=fatalframer_q8;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298738728;turbo=0;user-id=570007907;user-type= :sweethanin!sweethanin@sweethanin.tmi.twitch.tv PRIVMSG #shakerz_92 :@fatalframer_q8 garviaCutelul garviaCutelul garviaCutelul لا الله يخليك حوالينا ولا علينا
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=8cc93317-4ec0-45b1-8511-cdd94ebbe63b;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298738973;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :fatalframe افضل لعبة بالعالم
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < :nightbot!nightbot@nightbot.tmi.twitch.tv JOIN #0us5ama
+:0us5ama!0us5ama@0us5ama.tmi.twitch.tv JOIN #0us5ama
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: JOIN:: 0us5ama
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket:ACTION: JOIN:: 0us5ama
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=57ecd4ec-70ff-421e-9327-393549dc003a;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298750049;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :@fatalframer_q8 نايس
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=a7292e7f-a78f-44e7-a1d6-fba5b72ed5fc;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298750297;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :fatalframe افضل لعبة بالعالم
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/11;badges=moderator/1,subscriber/9,bits/1750000;client-nonce=117ab55c1bda79d3adb50b33ced89cfe;color=#1E90FF;display-name=fatalframer_q8;emotes=;first-msg=0;flags=;id=1b6c701f-949e-4f33-aeeb-6e2fef063463;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298752017;turbo=0;user-id=426479976;user-type=mod :fatalframer_q8!fatalframer_q8@fatalframer_q8.tmi.twitch.tv PRIVMSG #shakerz_92 :هههههههههههههههههه
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=8ba5d1a5-b06c-484d-87ca-bbb5d2bbe6e3;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298762062;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :بقس؟
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=emotesv2_42c1d75d6a6143b982387b34e55e2a1a:33-42;first-msg=0;flags=;id=af0249fb-cba1-486a-a85f-f9f03bcf75ad;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298763378;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :mohannd__ تم بقسك من othman4433  shaker2Box
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/7;badges=subscriber/6,bits/10000;client-nonce=5ba519d5f3d56ab7e167c8f0f8719def;color=#FF69B4;display-name=SweetHanin;emote-only=1;emotes=emotesv2_bd2cb10be8ff4cdc92790677f6183dbf:0-8,10-18,20-28;first-msg=0;flags=;id=a36e7d65-2453-4389-a6b3-c42639ce99fe;mod=0;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298765430;turbo=0;user-id=570007907;user-type= :sweethanin!sweethanin@sweethanin.tmi.twitch.tv PRIVMSG #shakerz_92 :iwzlyMnoo iwzlyMnoo iwzlyMnoo
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=d56f6494-d983-4a30-b708-c11080605b18;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298795333;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :كف؟
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=517a4ae2-d2c6-4af3-bc37-904052347f39;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298796451;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :mohannd__ القم كف من afnan_opi
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/1;badges=subscriber/0;color=#0000FF;display-name=youssefthey2j;emotes=;first-msg=0;flags=;id=23ff46e2-b207-470d-8bc4-b827ad91f12a;mod=0;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298801967;turbo=0;user-id=794186204;user-type= :youssefthey2j!youssefthey2j@youssefthey2j.tmi.twitch.tv PRIVMSG #shakerz_92 :بدون اي تطبيل دترويت افضل لعبه وقصه كارا افضل من باقي قصص في لعبه
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < :moobot!moobot@moobot.tmi.twitch.tv JOIN #0us5ama
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: JOIN:: 0us5ama
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket: < :zerotheking09!zerotheking09@zerotheking09.tmi.twitch.tv JOIN #shakerz_92
+:3li76xd!3li76xd@3li76xd.tmi.twitch.tv JOIN #shakerz_92
+:itsvodoo!itsvodoo@itsvodoo.tmi.twitch.tv JOIN #shakerz_92
+:ybwchannel!ybwchannel@ybwchannel.tmi.twitch.tv PART #shakerz_92
+:tariqtmm!tariqtmm@tariqtmm.tmi.twitch.tv PART #shakerz_92
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: JOIN:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket:ACTION: JOIN:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket:ACTION: JOIN:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket:ACTION: PART:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: part
+DEBUG:twitchio.client:dispatching event part
+DEBUG:twitchio.websocket:ACTION: PART:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: part
+DEBUG:twitchio.client:dispatching event part
+DEBUG:twitchio.websocket: < @badge-info=;badges=;color=#8A2BE2;display-name=zooz41;emotes=emotesv2_e69c0ab09d7c4bc9b5dada9f40138337:13-23;first-msg=0;flags=;id=9a4b88a4-2c20-43e3-88db-76436270b4e6;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298806470;turbo=0;user-id=608532936;user-type= :zooz41!zooz41@zooz41.tmi.twitch.tv PRIVMSG #shakerz_92 :السلام عليكم lilfokNOTME
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.client:dispatching event pubsub_message
+DEBUG:twitchio.client:dispatching event pubsub_channel_points
+DEBUG:root:['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '_broadcaster_id', '_channel', '_http', 'background_color', 'cooldown', 'cooldown_until', 'cost', 'delete', 'edit', 'enabled', 'get_redemptions', 'id', 'image', 'in_stock', 'input_required', 'max_per_stream', 'max_per_user_stream', 'paused', 'prompt', 'redemptions_current_stream', 'redemptions_skip_queue', 'title']
+DEBUG:root:['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__func__', '__ge__', '__get__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__self__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+DEBUG:root:['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '_cached_rewards', '_http', 'automod_check', 'channel', 'create_clip', 'create_marker', 'create_poll', 'create_prediction', 'edit', 'end_poll', 'end_prediction', 'fetch', 'fetch_active_extensions', 'fetch_ban_events', 'fetch_bans', 'fetch_bits_leaderboard', 'fetch_channel_teams', 'fetch_chat_settings', 'fetch_clips', 'fetch_extensions', 'fetch_follow', 'fetch_followers', 'fetch_following', 'fetch_goals', 'fetch_hypetrain_events', 'fetch_markers', 'fetch_mod_events', 'fetch_moderators', 'fetch_polls', 'fetch_schedule', 'fetch_stream_key', 'fetch_subscriptions', 'fetch_tags', 'fetch_videos', 'follow', 'get_custom_rewards', 'get_predictions', 'id', 'modify_stream', 'name', 'replace_tags', 'start_commercial', 'unfollow', 'update_chat_settings', 'update_extensions']
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=f7e0fd13-d1a5-4d0a-a42c-2162bb7d08cf;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298814851;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :وعليكم السلام حيو زوز ولكم
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/11;badges=moderator/1,subscriber/9,bits/1750000;client-nonce=4fcd3550d9ee1fefb6b3a76e295e0abd;color=#1E90FF;display-name=fatalframer_q8;emotes=;first-msg=0;flags=;id=df19b2c2-ef4e-4139-948c-49f2b468a72a;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298816657;turbo=0;user-id=426479976;user-type=mod :fatalframer_q8!fatalframer_q8@fatalframer_q8.tmi.twitch.tv PRIVMSG #shakerz_92 :هههههههههههه قال 7ونص برجع اصلا حسيت انه مايمدي
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=64891df98636e03f8d4b6aba8a12c544;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=f679c1c8-42fc-4540-bf41-a4f4cd0691ba;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298821013;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :!sr https://youtu.be/ylBly0NfCLU
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=partner/1;color=#5B99FF;display-name=StreamElements;emotes=;first-msg=0;flags=;id=4a192217-a233-4f71-8480-c49a06afd60e;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298821364;turbo=0;user-id=100135110;user-type= :streamelements!streamelements@streamelements.tmi.twitch.tv PRIVMSG #shakerz_92 :@AZiZqatar, added Assala Nasri - "Assala - Ghalban [Lyrics Video] 2022 | أصالة - غلبان" to the queue at #2 (playing ~in  3 mins 20 secs) https://youtu.be/ylBly0NfCLU
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=5105369d-4370-4c82-99bd-a854f789f47d;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298821403;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :@AZiZqatar -> "Assala - Ghalban [Lyrics Video] 2022 | أصالة - غلبان" by Assala Nasri has been added to the queue in position #69
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=304047383:20-28;first-msg=0;flags=;id=0872d2e6-5d30-4a81-8f19-88986fd9c754;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298829141;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :يعطيك العافيه اسامة KPOPheart
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=eb88c2f1162e21939b92bf5228ece739;color=#FF69B4;display-name=murruj;emotes=;first-msg=0;flags=;id=80f76b9e-2742-4723-b31c-cb46abee9b64;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298831725;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :عزيز مو حرام عليك؟
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=;color=#8A2BE2;display-name=zooz41;emotes=emotesv2_2a0f5b99b75f48f9b580d4ca62c286f7:12-23;first-msg=0;flags=;id=964fd4fa-0aa8-4838-911e-d22fbe2a4209;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298833832;turbo=0;user-id=608532936;user-type= :zooz41!zooz41@zooz41.tmi.twitch.tv PRIVMSG #shakerz_92 :يولكمك مهند nectro1Comfy
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=2de1caec-c54d-41ea-afe9-dfad71e2672b;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298834908;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :ولكمم عزيززز
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=95d42543a282d2b10cc77d6aa35d3632;color=#FF69B4;display-name=murruj;emotes=;first-msg=0;flags=;id=b7bd658d-446f-4867-8dcd-d2ac6b506554;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298853148;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :@AZiZqatar ليش ماتقولي دستني تخوف كذا حرام عليك والله
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=7e777f5304c8c66320faeb52795b412f;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=5d0a8d95-6489-440c-a8f4-1c56006c9c37;mod=1;reply-parent-display-name=murruj;reply-parent-msg-body=عزيز\sمو\sحرام\sعليك؟;reply-parent-msg-id=80f76b9e-2742-4723-b31c-cb46abee9b64;reply-parent-user-id=251045159;reply-parent-user-login=murruj;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298861220;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :@murruj سكتي عني انا انطر افطر على شان اسمعها الاغنيه يديده
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=f56fd63a-6cba-42d6-829d-987220e00daf;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298861490;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :بو شهاب
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=b97a7736bb3ac8a3bde9e751d27bd849;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=fe59f66d-692f-4f05-b433-b84857ae09cb;mod=1;reply-parent-display-name=murruj;reply-parent-msg-body=@AZiZqatar\sليش\sماتقولي\sدستني\sتخوف\sكذا\sحرام\sعليك\sوالله;reply-parent-msg-id=b7bd658d-446f-4867-8dcd-d2ac6b506554;reply-parent-user-id=251045159;reply-parent-user-login=murruj;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298887257;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :@murruj مافهمت
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=55846ce2-820c-40d8-8b83-065713733cc6;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298887469;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :بو شهاب
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/11;badges=moderator/1,subscriber/9,bits/1750000;client-nonce=b16f7c5e5187f48fd8b501a139c9d837;color=#1E90FF;display-name=fatalframer_q8;emotes=;first-msg=0;flags=;id=d0e985b4-d352-4651-97d5-41574b022f1a;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298893499;turbo=0;user-id=426479976;user-type=mod :fatalframer_q8!fatalframer_q8@fatalframer_q8.tmi.twitch.tv PRIVMSG #shakerz_92 :دستني تخوف ؟
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=;color=#8A2BE2;display-name=zooz41;emotes=;first-msg=0;flags=;id=d652e898-7626-49ff-9093-ab6a6dd5ce74;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298893777;turbo=0;user-id=608532936;user-type= :zooz41!zooz41@zooz41.tmi.twitch.tv PRIVMSG #shakerz_92 :متى؟
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=2cb6474fde9d7912644d0de538ef30e8;color=#FF69B4;display-name=murruj;emotes=;first-msg=0;flags=;id=67fb067e-ba9f-4534-af50-26c8b186fdb9;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298894547;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :دستني تخوف
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=b7b41fda-bcf5-468d-8ae6-bc7b086befe5;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298895321;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :zooz41 has been following Shakerz_92 for 2 months, 1 week, 2 days, 14 hours, 8 minutes, 8 seconds
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=;color=#8A2BE2;display-name=zooz41;emote-only=1;emotes=emotesv2_e69c0ab09d7c4bc9b5dada9f40138337:0-10;first-msg=0;flags=;id=89e327ee-7f4d-4a82-83df-3fd0c0b93451;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298898074;turbo=0;user-id=608532936;user-type= :zooz41!zooz41@zooz41.tmi.twitch.tv PRIVMSG #shakerz_92 :lilfokNOTME
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=bf4777296f62c600afee7b313c3b7f4e;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=9c9807de-28aa-42f9-ac03-3a0481cb5028;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298902663;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :ما تخوف دستني
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=18eaf7d34d4ebafafb6119c2fc4a7735;color=#FF69B4;display-name=murruj;emote-only=1;emotes=86:0-9;first-msg=0;flags=;id=00e39971-282e-4b16-be86-b26717bf27a3;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298902977;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :BibleThump
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=b1d03507-f489-4e66-bc04-e48aa50bdb9e;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298902989;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :نايس
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=4e3cfcdc8daa993a0a70e45827628523;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=32463229-0ab3-4e37-8479-8a880c54024d;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298909751;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :مافيها شي
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=2a82e205a97ce090d97da712ae8e7786;color=#FF69B4;display-name=murruj;emotes=;first-msg=0;flags=;id=8faecba2-94da-4964-a0fa-69ee5bd5c4f1;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298914030;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :الا
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=cfdc3cc4b439da7ee542ef29a63d0514;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=a9f2569f-29bb-4eb2-8419-5ff37cb32dc3;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298921527;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :البوت ليه ما يشتغل
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < :youssef4erief!youssef4erief@youssef4erief.tmi.twitch.tv JOIN #shakerz_92
+:zooz41!zooz41@zooz41.tmi.twitch.tv JOIN #shakerz_92
+:hreemj!hreemj@hreemj.tmi.twitch.tv PART #shakerz_92
+:itsvodoo!itsvodoo@itsvodoo.tmi.twitch.tv PART #shakerz_92
+:zerotheking09!zerotheking09@zerotheking09.tmi.twitch.tv PART #shakerz_92
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: JOIN:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket:ACTION: JOIN:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: join
+DEBUG:twitchio.client:dispatching event join
+DEBUG:twitchio.websocket:ACTION: PART:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: part
+DEBUG:twitchio.client:dispatching event part
+DEBUG:twitchio.websocket:ACTION: PART:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: part
+DEBUG:twitchio.client:dispatching event part
+DEBUG:twitchio.websocket:ACTION: PART:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: part
+DEBUG:twitchio.client:dispatching event part
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=7fb8e2c1fb561ffe965126e87248c912;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=2acd4037-50e6-42e9-b1c9-bbd36c1aa953;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298929104;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :!sr https://youtu.be/ylBly0NfCLU
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=be04cef9-c61f-462e-acd0-a7f3ae3fc84c;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298929444;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :@AZiZqatar -> There was an error requesting the song. Error: That song is already in the queue
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=partner/1;color=#5B99FF;display-name=StreamElements;emotes=;first-msg=0;flags=;id=b75b50c7-3447-4db8-af03-94e8b2ad7bcb;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298929488;turbo=0;user-id=100135110;user-type= :streamelements!streamelements@streamelements.tmi.twitch.tv PRIVMSG #shakerz_92 :@AZiZqatar, added Assala Nasri - "Assala - Ghalban [Lyrics Video] 2022 | أصالة - غلبان" to the queue at #2 (playing ~in  3 mins 20 secs) https://youtu.be/ylBly0NfCLU
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/1;badges=subscriber/0;color=#0000FF;display-name=youssefthey2j;emotes=;first-msg=0;flags=;id=b9857789-25c8-4cc2-8237-018d20f192bb;mod=0;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298930224;turbo=0;user-id=794186204;user-type= :youssefthey2j!youssefthey2j@youssefthey2j.tmi.twitch.tv PRIVMSG #shakerz_92 :متي؟
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/11;badges=moderator/1,subscriber/9,bits/1750000;client-nonce=3fe57943e28b8136a114c71f95b42c6d;color=#1E90FF;display-name=fatalframer_q8;emotes=;first-msg=0;flags=;id=be9b7e16-b6b8-47c6-8496-c0fe2ab52c34;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298933583;turbo=0;user-id=426479976;user-type=mod :fatalframer_q8!fatalframer_q8@fatalframer_q8.tmi.twitch.tv PRIVMSG #shakerz_92 :@murruj انتي كل شي تخافين منه
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=98e4e9569454ee7584be4bc87c9bc01d;color=#FF69B4;display-name=murruj;emotes=;first-msg=0;flags=;id=eebfa147-c23b-46f8-80bc-c92bed86b4fe;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298933687;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :مو مشغل الاس ار
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=5f45fb1a-7d84-40a0-94f1-24b3fd820c8e;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298933752;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :بو شهاب
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=;color=#8A2BE2;display-name=zooz41;emotes=;first-msg=0;flags=;id=6e6241b1-a4f2-42b4-a70a-1b0600454c3d;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298934939;turbo=0;user-id=608532936;user-type= :zooz41!zooz41@zooz41.tmi.twitch.tv PRIVMSG #shakerz_92 :سوي سكب @azizqatar
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=;color=#8A2BE2;display-name=zooz41;emotes=;first-msg=0;flags=;id=9e2a640f-18bd-464c-9e12-242bc2c6eb19;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298944057;turbo=0;user-id=608532936;user-type= :zooz41!zooz41@zooz41.tmi.twitch.tv PRIVMSG #shakerz_92 :!ss جي
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=e728e2a6-ea7c-4e46-a03c-e68f157911ee;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298945320;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :!play
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=partner/1;color=#5B99FF;display-name=StreamElements;emotes=;first-msg=0;flags=;id=4425f0df-2a4d-4b27-907c-fa58fa5d3680;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298945518;turbo=0;user-id=100135110;user-type= :streamelements!streamelements@streamelements.tmi.twitch.tv PRIVMSG #shakerz_92 :mohannd__, songrequest is now playing!
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=;color=#8A2BE2;display-name=zooz41;emote-only=1;emotes=emotesv2_e69c0ab09d7c4bc9b5dada9f40138337:0-10;first-msg=0;flags=;id=df8f544c-c6c5-40c4-a56c-a2c3d5d13596;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298949862;turbo=0;user-id=608532936;user-type= :zooz41!zooz41@zooz41.tmi.twitch.tv PRIVMSG #shakerz_92 :lilfokNOTME
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=b46af91a1b1288965cd3d73e71db00cf;color=#FF69B4;display-name=murruj;emotes=;first-msg=0;flags=;id=5ac086b0-7b78-47a0-8217-5ebd8c6db9a4;mod=1;reply-parent-display-name=fatalframer_q8;reply-parent-msg-body=@murruj\sانتي\sكل\sشي\sتخافين\sمنه;reply-parent-msg-id=be9b7e16-b6b8-47c6-8496-c0fe2ab52c34;reply-parent-user-id=426479976;reply-parent-user-login=fatalframer_q8;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298951530;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :@fatalframer_q8 والله بدر يبشوني اشياء غريبة
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=dfa2ca0b-8e5a-4d27-869f-1b0e1a5ce3f3;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298951716;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :fatalframe افضل لعبة بالعالم
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.client:dispatching event pubsub_pong
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=a8b6e609-09af-4292-83fc-19e8e278d045;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298957288;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :!skip
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=partner/1;color=#5B99FF;display-name=StreamElements;emotes=;first-msg=0;flags=;id=c5c84565-5abf-429f-9f77-99a971830c72;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298957495;turbo=0;user-id=100135110;user-type= :streamelements!streamelements@streamelements.tmi.twitch.tv PRIVMSG #shakerz_92 :@mohannd__, skipped song: Sean Paul, David Guetta - Mad Love ft. Becky G
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/6;badges=moderator/1,subscriber/6;color=#1E90FF;display-name=WizeBot;emotes=;first-msg=0;flags=;id=c9c6a3eb-964d-4474-8ebc-339f6b6292fc;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298962180;turbo=0;user-id=52268235;user-type=mod :wizebot!wizebot@wizebot.tmi.twitch.tv PRIVMSG #shakerz_92 :ACTION 【 ⏰ 13D 5h 49m 12s 】
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/1;badges=subscriber/0;color=#0000FF;display-name=youssefthey2j;emotes=;first-msg=0;flags=;id=5389fca5-e534-4ec6-8e86-9993e1d1849f;mod=0;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298973878;turbo=0;user-id=794186204;user-type= :youssefthey2j!youssefthey2j@youssefthey2j.tmi.twitch.tv PRIVMSG #shakerz_92 :قول !play
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=fa690bcf4eb7e0c9ce2b4231f09210a8;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=979167eb-f559-47db-9988-cc9ae9f2c829;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298976320;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :lv,,[
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=;first-msg=0;flags=;id=dd142d4a-e868-404a-848e-edd90f704ffd;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298979098;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :!volume 100
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=a305b4bc-3395-40a7-8ce5-3d5931095f65;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298979383;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :@mohannd__ -> The volume has been updated to 100.
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=25790ab2748efb231a9e135905ae4cb8;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=6f584fe4-7c42-40ef-adf8-31b2c3880054;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298983219;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :مرووج
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < PING :tmi.twitch.tv
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: Sending PONG reply.
+DEBUG:twitchio.websocket: > PONG :tmi.twitch.tv
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=2c6948ece5d61af2830a414f7e2f462c;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=58a57324-8d64-4f71-b06f-b2ba7c297af8;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298988626;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :انتي بلشتي دستني ؟
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=;badges=;color=#8A2BE2;display-name=zooz41;emotes=emotesv2_6f6e32b18e204d3794e6b691a778e236:13-23;first-msg=0;flags=;id=f44be818-68d9-48b1-a0c4-df5b3ad83e1f;mod=0;returning-chatter=0;room-id=51565836;subscriber=0;tmi-sent-ts=1657298993579;turbo=0;user-id=608532936;user-type= :zooz41!zooz41@zooz41.tmi.twitch.tv PRIVMSG #shakerz_92 :مطفي من عنده nectro1Hehe
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=0f1d9260b36669392f6fc1ac2ed2562d;color=#FF69B4;display-name=murruj;emotes=;first-msg=0;flags=;id=96f92eed-4411-4b48-bd7c-9c2821823fe7;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657298995314;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :ايواا
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/12;badges=moderator/1,subscriber/12,bits/100;color=#1E90FF;display-name=mohannd__;emotes=emotesv2_6e9763d2e4d34c2d9269dea47b89aeb3:11-21;first-msg=0;flags=;id=b13d0969-a66b-4c84-be14-eb5068cf8a81;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657299005401;turbo=0;user-id=519399732;user-type=mod :mohannd__!mohannd__@mohannd__.tmi.twitch.tv PRIVMSG #shakerz_92 :يب @zooz41 shaker2Anya
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=founder/13;badges=moderator/1,founder/0,bits/300000;client-nonce=a5025987d0ee6a6f4eb8aa18d1d2ea9b;color=#FF69B4;display-name=murruj;emotes=;first-msg=0;flags=;id=d8c13976-8e4e-4743-8c73-0a77cc6e80db;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657299009282;turbo=0;user-id=251045159;user-type=mod :murruj!murruj@murruj.tmi.twitch.tv PRIVMSG #shakerz_92 :لوحدي
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/11;badges=moderator/1,subscriber/9,bits/1750000;client-nonce=02f0be2388de7e813648c5e31c6e9efe;color=#1E90FF;display-name=fatalframer_q8;emotes=;first-msg=0;flags=;id=19a1047e-bd65-43d0-b998-764d6289ed7f;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657299013028;turbo=0;user-id=426479976;user-type=mod :fatalframer_q8!fatalframer_q8@fatalframer_q8.tmi.twitch.tv PRIVMSG #shakerz_92 :على طاري اشياء غريبة شفتوا المسلسل ؟
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/9;badges=moderator/1,subscriber/9,bits/500000;client-nonce=7f420b60414dd5bd79b2a39d3a796e92;color=#FF4500;display-name=AZiZqatar;emotes=;first-msg=0;flags=;id=9f464ad5-4d70-4153-a8f8-164f185e1bc7;mod=1;reply-parent-display-name=murruj;reply-parent-msg-body=ايواا;reply-parent-msg-id=96f92eed-4411-4b48-bd7c-9c2821823fe7;reply-parent-user-id=251045159;reply-parent-user-login=murruj;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657299013120;turbo=0;user-id=494497843;user-type=mod :azizqatar!azizqatar@azizqatar.tmi.twitch.tv PRIVMSG #shakerz_92 :@murruj بكره بكره اكوون وياج من اييي تووو زد
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message
+DEBUG:twitchio.websocket: < @badge-info=subscriber/28;badges=moderator/1,subscriber/24,partner/1;color=#7C7CE1;display-name=Nightbot;emotes=;first-msg=0;flags=;id=3be1dc8c-1177-4b6d-a107-86a7774fd10e;mod=1;returning-chatter=0;room-id=51565836;subscriber=1;tmi-sent-ts=1657299013383;turbo=0;user-id=19264788;user-type=mod :nightbot!nightbot@nightbot.tmi.twitch.tv PRIVMSG #shakerz_92 :بو شهاب
+
+DEBUG:twitchio.websocket:Dispatching event: raw_data
+DEBUG:twitchio.client:dispatching event raw_data
+DEBUG:twitchio.websocket:ACTION: PRIVMSG:: shakerz_92
+DEBUG:twitchio.websocket:Dispatching event: message
+DEBUG:twitchio.client:dispatching event message

@@ -1,0 +1,130 @@
+{
+    "\u062a\u0628\u0631\u0639": {
+        "outcome": [
+            {
+                "id": "8372ccd8-7207-452d-ab40-0eb63bdbd15a",
+                "title": "\u0627\u0644\u0627\u063a\u0646\u064a\u0627\u0621 \u0627\u0644\u0645\u0637\u0627\u0646\u064a\u062e",
+                "users": 6,
+                "channel_points": 14839,
+                "top_predictors": [
+                    {
+                        "user_id": "280563704",
+                        "user_login": "txb_r",
+                        "user_name": "txb_r",
+                        "channel_points_used": 5000,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "808833017",
+                        "user_login": "moaaz_135",
+                        "user_name": "moaaz_135",
+                        "channel_points_used": 3637,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "524591447",
+                        "user_login": "besh97s",
+                        "user_name": "besh97s",
+                        "channel_points_used": 3200,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "472389649",
+                        "user_login": "hussain149",
+                        "user_name": "hussain149",
+                        "channel_points_used": 3000,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "251045159",
+                        "user_login": "murruj",
+                        "user_name": "murruj",
+                        "channel_points_used": 1,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "426479976",
+                        "user_login": "fatalframer_q8",
+                        "user_name": "fatalframer_q8",
+                        "channel_points_used": 1,
+                        "channel_points_won": 0
+                    }
+                ],
+                "color": "PINK"
+            }
+        ],
+        "created_at": "2022-08-17T10:37:17.751704271Z"
+    },
+    "\u062a\u0628\u0631\u0639 \u0644\u0627\u0645\u062c\u062f": {
+        "outcome": [
+            {
+                "id": "ceb9dcde-86d5-41fc-a97e-fb51ad1dc528",
+                "title": "\u0627\u0645\u062c\u062f",
+                "users": 3,
+                "channel_points": 50,
+                "top_predictors": [
+                    {
+                        "user_id": "508430284",
+                        "user_login": "amj4do",
+                        "user_name": "AMJ4Do",
+                        "channel_points_used": 20,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "808833017",
+                        "user_login": "moaaz_135",
+                        "user_name": "moaaz_135",
+                        "channel_points_used": 20,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "716841677",
+                        "user_login": "muosa3siry",
+                        "user_name": "muosa3siry",
+                        "channel_points_used": 10,
+                        "channel_points_won": 0
+                    }
+                ],
+                "color": "BLUE"
+            },
+            {
+                "id": "367419b3-3d2a-4d1a-99f5-3333359499a5",
+                "title": "\u0628\u0641\u0631",
+                "users": 4,
+                "channel_points": 155159,
+                "top_predictors": [
+                    {
+                        "user_id": "211955606",
+                        "user_login": "itsbfr",
+                        "user_name": "itsbfr",
+                        "channel_points_used": 100000,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "429693249",
+                        "user_login": "kiilua_99",
+                        "user_name": "KiIlua_99",
+                        "channel_points_used": 41032,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "725827301",
+                        "user_login": "sbktryw",
+                        "user_name": "sbktryw",
+                        "channel_points_used": 14126,
+                        "channel_points_won": 0
+                    },
+                    {
+                        "user_id": "280563704",
+                        "user_login": "txb_r",
+                        "user_name": "txb_r",
+                        "channel_points_used": 1,
+                        "channel_points_won": 0
+                    }
+                ],
+                "color": "PINK"
+            }
+        ],
+        "created_at": "2022-08-17T11:45:07.811106462Z"
+    }
+}
