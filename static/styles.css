@@ -33,14 +33,14 @@ html, body {
 
 
 ::-webkit-scrollbar-thumb {
-    background: url("/static/Asset 10.png");
+    background: url("/static/thumb.png");
     background-size: contain;
     border-radius: 100vw;
     border: .25em solid #33332d;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: url("/static/Asset 9.png");
+    background: url("/static/hover.png");
     background-size: contain;
     border-color: #5c5c2e;
 }

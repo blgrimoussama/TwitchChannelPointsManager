@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+main1.py
+main_2.py
+keep_alive.py
+env
+venv
+.env

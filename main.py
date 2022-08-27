@@ -4,6 +4,7 @@ from hypercorn.config import Config
 from hypercorn.asyncio import serve
 from quart import Quart, render_template, redirect, send_from_directory
 from func import apology, change_reward_status
+from dotenv import load_dotenv, find_dotenv
 import asyncio
 import requests
 import twitchio
@@ -15,15 +16,18 @@ import nest_asyncio
 
 nest_asyncio.apply()
 
+load_dotenv(find_dotenv())
+
 # import logging
 # logging.basicConfig(filename="log_.txt", level=logging.DEBUG)
+
 headers = {
-    'Authorization': os.environ['OAUTH'],
-    'Client-Id': os.environ['CLIENT_ID']
+    'Authorization': os.environ('OAUTH'),
+    'Client-Id': os.getenv('CLIENT_ID')
 }
 
-my_token = os.environ['MY_TOKEN']
-client_id_2 = os.environ['CLIENT_ID_2']
+my_token = os.getenv('MY_TOKEN')
+client_id_2 = os.getenv('CLIENT_ID_2')
 channels = ['shakerz_92']
 users_oauth_tokens = {}
 users_channel_ids = {}
@@ -34,23 +38,26 @@ nexts = {}
 todays = {}
 currents = {}
 current_jsons = {}
+
+DIRNAME = '\\'.join(os.path.dirname(__file__).split("/"))
+
 for channel in channels:
-    users_oauth_tokens[channel] = os.environ[f'{channel}_CHANNEL_TOKEN']
+    users_oauth_tokens[channel] = os.getenv(f'{channel}_CHANNEL_TOKEN')
     users_channel_ids[channel] = int(
         requests.get('https://api.twitch.tv/helix/users?login=' + channel,
                      headers=headers).json()['data'][0]['id'])
-    day_jsons[channel] = os.path.join(f'static/{channel}', 'day.json')
-    lasts[channel] = os.path.join(f'static/{channel}', 'last.txt')
-    last_jsons[channel] = os.path.join(f'static/{channel}', 'last.json')
+    day_jsons[channel] = os.path.join(f'{DIRNAME}/static/{channel}', 'day.json')
+    lasts[channel] = os.path.join(f'{DIRNAME}/static/{channel}', 'last.txt')
+    last_jsons[channel] = os.path.join(f'{DIRNAME}/static/{channel}', 'last.json')
     with open(day_jsons[channel], "r") as data:
         day = json.load(data)
     nexts[channel] = day['today']
     todays[channel] = datetime.strptime(nexts[channel],
                                         '%d/%m/%Y').strftime("%d_%m_%Y")
 
-    currents[channel] = os.path.join(f'static/{channel}',
+    currents[channel] = os.path.join(f'{DIRNAME}/static/{channel}',
                                      f'spin_{todays[channel]}.txt')
-    current_jsons[channel] = os.path.join(f'static/{channel}',
+    current_jsons[channel] = os.path.join(f'{DIRNAME}/static/{channel}',
                                           f'spin_{todays[channel]}.json')
 
 app = Quart(__name__)
@@ -66,7 +73,7 @@ async def get_txt(channel, path):
     try:
         if not path.endswith('.txt'):
             raise FileNotFoundError
-        with open(os.path.join(f'static/{channel}', path), "r") as f:
+        with open(os.path.join(f'{DIRNAME}/static/{channel}', path), "r") as f:
             content = f.read()
         return {"participants": content.strip().split('\n')}
     except FileNotFoundError:
@@ -126,7 +133,7 @@ class Bot(commands.Bot):
         # Initialise our Bot with our access token, prefix and a list of channels to join on boot...
         # prefix can be a callable, which returns a list of strings or a string...
         # initial_channels can also be a callable which returns a list of strings...
-        super().__init__(token=os.environ['paperrocker'],
+        super().__init__(token=os.getenv('paperrocker'),
                          prefix=']',
                          initial_channels=list(set().union(
                              channels, ['0us5ama'])))
@@ -425,13 +432,9 @@ client.loop.create_task(main())
 loop = asyncio.get_event_loop()
 config = Config()
 config.bind = ['0.0.0.0:8080']
-# def debug(text):
-#     print(text)
-#     return ''
-# environment.filters['debug'] = debug
-# loop.create_task(serve(app, config))
-# bot = Bot()
-# bot.pubsub_client = client
-# bot.run()
+loop.create_task(serve(app, config))
+bot = Bot()
+bot.pubsub_client = client
+bot.run()
 
 # bot.run() is blocking and will stop execution of any below code here until stopped or closed.
