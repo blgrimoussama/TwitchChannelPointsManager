@@ -16,13 +16,15 @@ import nest_asyncio
 
 nest_asyncio.apply()
 
-load_dotenv(find_dotenv())
+# load_dotenv(find_dotenv())
 
 # import logging
 # logging.basicConfig(filename="log_.txt", level=logging.DEBUG)
 
+load_dotenv(find_dotenv())
+
 headers = {
-    'Authorization': os.environ('OAUTH'),
+    'Authorization': os.getenv('OAUTH'),
     'Client-Id': os.getenv('CLIENT_ID')
 }
 
@@ -42,23 +44,23 @@ current_jsons = {}
 DIRNAME = '\\'.join(os.path.dirname(__file__).split("/"))
 
 for channel in channels:
-    users_oauth_tokens[channel] = os.getenv(f'{channel}_CHANNEL_TOKEN')
+    users_oauth_tokens[channel] = os.getenv(f"{channel}_CHANNEL_TOKEN")
     users_channel_ids[channel] = int(
-        requests.get('https://api.twitch.tv/helix/users?login=' + channel,
+        requests.get(f"https://api.twitch.tv/helix/users?login={channel}",
                      headers=headers).json()['data'][0]['id'])
-    day_jsons[channel] = os.path.join(f'{DIRNAME}/static/{channel}', 'day.json')
-    lasts[channel] = os.path.join(f'{DIRNAME}/static/{channel}', 'last.txt')
-    last_jsons[channel] = os.path.join(f'{DIRNAME}/static/{channel}', 'last.json')
+    day_jsons[channel] = os.path.join(f"{DIRNAME}/static/{channel}", 'day.json')
+    lasts[channel] = os.path.join(f"{DIRNAME}/static/{channel}", 'last.txt')
+    last_jsons[channel] = os.path.join(f"{DIRNAME}/static/{channel}", 'last.json')
     with open(day_jsons[channel], "r") as data:
         day = json.load(data)
     nexts[channel] = day['today']
     todays[channel] = datetime.strptime(nexts[channel],
                                         '%d/%m/%Y').strftime("%d_%m_%Y")
 
-    currents[channel] = os.path.join(f'{DIRNAME}/static/{channel}',
-                                     f'spin_{todays[channel]}.txt')
-    current_jsons[channel] = os.path.join(f'{DIRNAME}/static/{channel}',
-                                          f'spin_{todays[channel]}.json')
+    currents[channel] = os.path.join(f"{DIRNAME}/static/{channel}",
+                                     f"spin_{todays[channel]}.txt")
+    current_jsons[channel] = os.path.join(f"{DIRNAME}/static/{channel}",
+                                          f"spin_{todays[channel]}.json")
 
 app = Quart(__name__)
 isOn = False
@@ -73,7 +75,7 @@ async def get_txt(channel, path):
     try:
         if not path.endswith('.txt'):
             raise FileNotFoundError
-        with open(os.path.join(f'{DIRNAME}/static/{channel}', path), "r") as f:
+        with open(os.path.join(f"{DIRNAME}/static/{channel}", path), "r") as f:
             content = f.read()
         return {"participants": content.strip().split('\n')}
     except FileNotFoundError:
@@ -113,7 +115,7 @@ async def spins(channel, path):
                                      title=path.replace('.txt', ''),
                                      data=data['participants'])
     else:
-        return redirect(f'/{path}', code=302)
+        return redirect(f"/{path}", code=302)
 
 
 @app.route("/test/<channel>/<path:path>")
@@ -125,7 +127,7 @@ async def test(channel, path):
                                      title=path.replace('.txt', ''),
                                      data=data['participants'])
     else:
-        return redirect(f'/{path}', code=302)
+        return redirect(f"/{path}", code=302)
 
 
 class Bot(commands.Bot):
@@ -142,8 +144,8 @@ class Bot(commands.Bot):
         # Notify us when everything is ready!
         # We are logged in and ready to chat and use commands...
         self.test.start('')
-        print(f'Logged in as | {self.nick}')
-        print(f'User id is | {self.user_id}')
+        print(f"Logged in as | {self.nick}")
+        print(f"User id is | {self.user_id}")
 
     async def event_message(self, message):
         global nexts, todays, currents, current_jsons, isOn
@@ -175,9 +177,9 @@ class Bot(commands.Bot):
             today = todays[channel_name] = datetime.strptime(
                 next, '%d/%m/%Y').strftime("%d_%m_%Y")
             current = currents[channel_name] = os.path.join(
-                f'static/{channel_name}', f'spin_{today}.txt')
+                f"static/{channel_name}", f"spin_{today}.txt")
             current_json = current_jsons[channel_name] = os.path.join(
-                f'static/{channel_name}', f'spin_{today}.json')
+                f"static/{channel_name}", f"spin_{today}.json")
 
             with open(day_json, "w") as data:
                 json.dump(day, data)
@@ -191,8 +193,7 @@ class Bot(commands.Bot):
 
             await message.channel.send('switched to tomorrow')
 
-            with open(os.path.join(f'static/{channel_name}', 'reward.json'),
-                      "r") as data:
+            with open(os.path.join(f"static/{channel_name}", 'reward.json'), "r") as data:
                 data = json.load(data)
             reward_id = data['reward_id']
 
@@ -207,12 +208,7 @@ class Bot(commands.Bot):
             for reward in rewards:
                 id = reward['reward_id']
                 user = reward['user']
-                if user == '0US5AMA':
-                    change_reward_status(client_id_2, users_oauth_token,
-                                         users_channel_id, reward_id, id,
-                                         "CANCELED")
-                else:
-                    change_reward_status(client_id_2, users_oauth_token,
+                change_reward_status(client_id_2, users_oauth_token,
                                          users_channel_id, reward_id, id,
                                          "FULFILLED")
         elif s[0] in ['واسطة؟', 'واسطه؟'
@@ -220,7 +216,7 @@ class Bot(commands.Bot):
             user = s_raw[1].replace('@', '')
             try:
                 resp = requests.get(
-                    f'https://api.twitch.tv/helix/users?login={user}',
+                    f"https://api.twitch.tv/helix/users?login={user}",
                     headers=headers).json()['data'][0]
                 user_id = resp['id']
                 user = resp['display_name']
@@ -234,9 +230,9 @@ class Bot(commands.Bot):
                 users = json.load(participants)
             if not user_id in users.keys():
                 with open(last, "a") as f:
-                    f.write(user + '\n')
+                    f.write(f"{user}\n")
                 with open(current, "a") as f:
-                    f.write(user + '\n')
+                    f.write(f"{user}\n")
                 participant = {
                     "user": user,
                     "reward_id": 0,
@@ -257,29 +253,29 @@ class Bot(commands.Bot):
                     json.dump(file_data, data, indent=4)
                 with open(last_json, "w") as data:
                     json.dump(file_data, data, indent=4)
-                await message.channel.send(f'{user} entered wastah!')
+                await message.channel.send(f"{user} entered wastah!")
             else:
-                await message.channel.send(f'{user} is already in, mayhtaj!')
+                await message.channel.send(f"{user} is already in, mayhtaj!")
         elif s[0] in ['!win'
                       ] and len(s) > 1 and author in [channel_name, '0us5ama']:
             user = s_raw[1].replace('@', '')
 
             try:
                 resp = requests.get(
-                    f'https://api.twitch.tv/helix/users?login={user}',
+                    f"https://api.twitch.tv/helix/users?login={user}",
                     headers=headers).json()['data'][0]
                 user_id = int(resp['id'])
                 user = resp['display_name']
             except (AttributeError, IndexError, KeyError):
                 return await message.channel.send('مين ذا؟')
             with open(
-                    os.path.join(f'static/{channel_name}', 'black_list.json'),
+                    os.path.join(f"static/{channel_name}", 'black_list.json'),
                     "r") as data:
                 black_list = json.load(data)
             if not user_id in black_list.values():
                 black_list[user] = user_id
                 with open(
-                        os.path.join(f'static/{channel_name}',
+                        os.path.join(f"static/{channel_name}",
                                      'black_list.json'), "w") as data:
                     json.dump(black_list, data, indent=4)
                 await message.channel.send(f"{user} added to the winners' list"
@@ -291,7 +287,7 @@ class Bot(commands.Bot):
             user = s_raw[1].replace('@', '')
             try:
                 resp = requests.get(
-                    f'https://api.twitch.tv/helix/users?login={user}',
+                    f"https://api.twitch.tv/helix/users?login={user}",
                     headers=headers).json()['data'][0]
                 user_id = resp['id']
                 user = resp['display_name']
@@ -309,9 +305,9 @@ class Bot(commands.Bot):
                     data = file.read().strip().split('\n')
                     data.remove(users[user_id]['user'])
                     with open(current, "w") as f:
-                        f.write('\n'.join(data) + '\n')
+                        f.write(f"{'\n'.join(data)}\n")
                     with open(last, "w") as f:
-                        f.write('\n'.join(data) + '\n')
+                        f.write(f"{'\n'.join(data)}\n")
                     with open(current_json, "r") as data:
                         file_data = json.load(data)
                     with open(current_json, "w") as data:
@@ -319,15 +315,15 @@ class Bot(commands.Bot):
                         json.dump(file_data, data, indent=4)
                     with open(last_json, "w") as data:
                         json.dump(file_data, data, indent=4)
-                    await message.channel.send(f'{user} براااااااااااااع')
+                    await message.channel.send(f"{user} براااااااااااااع")
                 else:
-                    await message.channel.send(f'ما يمديك {user} دافع فلووس')
+                    await message.channel.send(f"ما يمديك {user} دافع فلووس")
             else:
-                await message.channel.send(f'{user} مو موجود أصلا Kappa')
+                await message.channel.send(f"{user} مو موجود أصلا Kappa")
         # elif msg == '!routines' and author in ['shakerz_92', '0us5ama']:
         #     isOn = not isOn
         #     outcome = 'working' if isOn else 'stopped'
-        #     await message.channel.send(f'routines are now {outcome}')
+        #     await message.channel.send(f"routines are now {outcome}")
         # Since we have commands and are overriding the default `event_message`
         # We must let the bot know we want to handle and invoke our commands...
 
@@ -337,7 +333,7 @@ class Bot(commands.Bot):
     async def test(self, arg):
         global isOn
         if isOn:
-            await self.get_channel('shakerz_92').send(f'Test {arg}')
+            await self.get_channel('shakerz_92').send(f"Test {arg}")
 
     # @commands.command()
     # async def hello(self, ctx: commands.Context):
@@ -347,7 +343,7 @@ class Bot(commands.Bot):
 
     #     # Send a hello back!
     #     # Sending a reply back to the channel is easy... Below is an example.
-    #     await ctx.send(f'Hello {ctx.author.name}!')
+    #     await ctx.send(f"Hello {ctx.author.name}!")
 
 
 client = twitchio.Client(token=my_token)
@@ -374,9 +370,9 @@ async def event_pubsub_channel_points(
     print(event.reward.title, user)
     reward_id = event.reward.id
     channel_name = requests.get(
-        f'https://api.twitch.tv/helix/users?id={event.channel_id}',
+        f"https://api.twitch.tv/helix/users?id={event.channel_id}",
         headers=headers).json()['data'][0]['login']
-    with open(os.path.join(f'static/{channel_name}', 'reward.json'),
+    with open(os.path.join(f"static/{channel_name}", 'reward.json'),
               "r") as data:
         reward = json.load(data)
     if event.reward.title == reward['title']:
@@ -389,9 +385,9 @@ async def event_pubsub_channel_points(
         #     black_list = json.load(data)
         if not str(user_id) in users.keys():
             with open(lasts[channel_name], "a") as f:
-                f.write(user + '\n')
+                f.write(f"{user}\n")
             with open(currents[channel_name], "a") as g:
-                g.write(user + '\n')
+                g.write(f"{user}\n")
             participant = {
                 "user": user,
                 "reward_id": id,
@@ -424,7 +420,7 @@ async def main():
     ]
     await client.pubsub.subscribe_topics(topics)
     await client.start()
-    print(f'connected to {channels}')
+    print(f"connected to {channels}")
 
 
 client.loop.create_task(main())
